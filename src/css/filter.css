@@ -45,3 +45,9 @@
     font-size: 14px;
     color: #666;
 }
+
+@media (max-width: 480px) {
+    .filter-sidebar{
+        display: none;
+    }
+}

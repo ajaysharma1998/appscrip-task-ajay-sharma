@@ -1,11 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../css/login.css'; 
 import { Link } from 'react-router-dom';
 
 function LoginPage() {
+  const navigate = useNavigate();
+
+  const closeForm = () => {
+    navigate('/'); // Navigate to the home page or any other route
+  };
+
   return (
     <div className="auth-container">
       <form className="auth-form">
+        <button type="button" className="close-button" onClick={closeForm}>
+          &times;
+        </button>
         <h2>Login</h2>
         <div className="input-group">
           <label htmlFor="username">Username</label>

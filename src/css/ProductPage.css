@@ -1,0 +1,159 @@
+.main_container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.filter-sidebar {
+  /* border: 2px solid black; */
+  width: 250px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.filter-sidebar p.items-count {
+  font-size: 14px;
+  color: #333;
+}
+
+.hide-filters {
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.filter-category {
+  margin-bottom: 15px;
+}
+
+.filter-category h3 {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-category p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.product-page {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+  width: calc(25% - 20px); /* 4 items per row with spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img.IMAGE {
+  width: 150px;
+  height: 180px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.product-card button {
+  background-color: lightblue;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+.like-button.liked {
+  color: red;
+}
+
+.wishlist-button {
+  background-color: #007bff;
+}
+
+.wishlist-button:hover {
+  background-color: #0056b3;
+}
+
+.loading, .error, .no-products {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .product-card {
+    width: calc(33.33% - 20px); /* 3 items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 items per row */
+  }
+
+  .filter-sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 item per row */
+  }
+
+  .filter-sidebar {
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+

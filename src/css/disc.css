@@ -1,0 +1,33 @@
+.dis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.second_div{
+width: 100%;
+/* position: relative;
+top: 15vh; */
+}
+.Third_div{
+    width: 47%;
+    /* position: relative;
+    left: 60vh;
+    top: 19vh; */
+}
+.second_div h1{
+    text-align: center;
+    font-size: 32px;
+}
+.Third_div p{
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .second_div h1{
+        font-size: 12px;
+    }
+    .Third_div p{
+        font-size: 10px;
+    }
+}
